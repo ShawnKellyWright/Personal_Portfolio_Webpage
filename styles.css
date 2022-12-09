@@ -1,0 +1,105 @@
+/* following is global removal of margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --star-yellow: rgba(246, 204, 11);
+}
+
+/* The following is custom font - star wars style - which is now set as a global font*/
+@font-face {
+    font-family: "StarJediRounded-jW3R";
+    src: url(fonts/StarJediRounded-jW3R.ttf);
+}
+
+body {
+    background-image: url(images/space_stars_2.jpg);
+    font-family: "StarJediRounded-jW3R";
+    color: #fff;
+    /*, 'Times New Roman', Times, serif; */
+}
+
+/* following is navbar styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1em;
+    
+    background-color: var(--star-yellow);
+    padding: 30px;
+}
+
+/* following removes pre-set styling for ul and a tags */
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* following is project image section styling */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    max-width: 1280px;
+    grid-gap: 4rem;
+}
+
+.project-tile img {
+    border: 1px solid #000;
+    display: block;
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Base styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+/* following is footer section styling */
+#social {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: var(--star-yellow);
+
+}
