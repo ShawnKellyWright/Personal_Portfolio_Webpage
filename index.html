@@ -6,26 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shawn Wright's Portfolio Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/starwarsintro.css">
 </head>
 
 <body>
-    <div class="body-z-top">
-        <!-- following is main navbar section -->
-        <nav id="navbar">
-            <ul>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="" class="nav-link">Contact</a></li>
-                <li><a href="#social" class="nav-link">Social</a></li>
-            </ul>
-        </nav>
+    <!-- following is main navbar section -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#social" class="nav-link">Social</a></li>
+        </ul>
+    </nav>
 
-        <!-- following is main section which contains Shawn Wright's web development projects - My web portfolio -->
+    <!-- following is main section which contains Shawn Wright's web development projects - My web portfolio -->
+    <main id="main-section">
         <section id="welcome-section">
             <header>Greetings all!</header>
             <hr>
             <h1> Welcome to Shawn Wright's Web Development Portfolio</h1>
         </section>
+
+        <!-- Place in Body where you'd like intro to appear -->
+        <div class="star-wars-intro">
+
+            <!-- Blue Intro Text -->
+            <p class="intro-text">
+                A few days ago, during...
+            </p>
+
+            <!-- Logo Image or Text goes in here -->
+            <h2 class="main-logo">
+                <img src="img/star-wars-intro.png">
+            </h2>
+
+            <!-- All Scrolling Content Goes in here -->
+            <div class="main-content">
+
+                <div class="title-content">
+                    <p class="content-header">My name is Shawn Wright and I'm a Full Stack Web Developer</p>
+
+                    <br>
+
+                    <p class="content-body">
+                        After years of galactic silence, civilization is on the brink of a new Star Wars release. Now,
+                        with
+                        the Force preparing to awaken, the people of Earth seek solace in films of old. With nowhere to
+                        turn, they gather in great numbers and watch the original trilogy without rest. Three films. 6
+                        hours. 24 minutes. Popcorn. Slushies. Total elation.
+                    </p>
+
+                    <!-- button or link or whatever -->
+                    <a href="./StarScroll.zip" class="space-button">Click me to see my work Now!</a>
+
+                </div>
+            </div>
+        </div>
 
         <!-- following is my projects section -->
         <section id="projects">
@@ -52,28 +89,28 @@
                         alt="Image which when clicking on links to Shawn Wright's live hosted page of a Technical Document for Powerlifting"></a>
             </div>
         </section>
+    </main>
 
-        <!-- following is footer section containing social media and contact info for Shawn Wright -->
-        <footer>
-            <section id="social">
-                <div class="social-media stack-overflow"><a href="https://stackoverflow.com/users/9776467/shawn-wright"
-                        target="_blank" rel="noopener noreferrer"><img id="stck-ovrflw"
-                            src="images/stackoverflow_white_black_outline.svg"
-                            alt="stack overflow icon which links to my Stack overflow account"></a></div>
-                <div id="sm-li-2"><a id="profile-link" href="https://github.com/ShawnKellyWright" target="_blank"
-                        rel="noopener noreferrer"><img id="git-hub-img"
-                            src="images/icons8-github_white_border_black_2.svg"
-                            alt="github icon which links to my Github account"></a>
-                </div>
-                <div id="sm-li-3"><a id="linked-in"
-                        href="https://www.linkedin.com/in/shawn-wright-bb577b162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM%2FdvHjgxTKmuhAU%2FQA8GnQ%3D%3D"
-                        target="_blank" rel="noopener noreferrer"><img id="linked-in-img"
-                            src="images/linkedin_letters_only_white_border_black.svg"
-                            alt="linked in icon which links to my Linked in account"></a>
-                </div>
-            </section>
-        </footer>
-    </div>
+    <!-- following is footer section containing social media and contact info for Shawn Wright -->
+    <footer>
+        <section id="social">
+            <div class="social-media stack-overflow"><a href="https://stackoverflow.com/users/9776467/shawn-wright"
+                    target="_blank" rel="noopener noreferrer"><img id="stck-ovrflw"
+                        src="images/stackoverflow_white_black_outline.svg"
+                        alt="stack overflow icon which links to my Stack overflow account"></a>
+            </div>
+            <div id="sm-li-2"><a id="profile-link" href="https://github.com/ShawnKellyWright" target="_blank"
+                    rel="noopener noreferrer"><img id="git-hub-img" src="images/icons8-github_white_border_black_2.svg"
+                        alt="github icon which links to my Github account"></a>
+            </div>
+            <div id="sm-li-3"><a id="linked-in"
+                    href="https://www.linkedin.com/in/shawn-wright-bb577b162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM%2FdvHjgxTKmuhAU%2FQA8GnQ%3D%3D"
+                    target="_blank" rel="noopener noreferrer"><img id="linked-in-img"
+                        src="images/linkedin_letters_only_white_border_black.svg"
+                        alt="linked in icon which links to my Linked in account"></a>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>

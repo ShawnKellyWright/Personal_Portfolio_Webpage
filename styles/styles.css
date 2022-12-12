@@ -35,7 +35,6 @@ select {
 
 html {
     color-scheme: dark light;
-
 }
 
 /* The following is custom font - star wars style - which is now set as a global font*/
@@ -45,20 +44,33 @@ html {
 }
 
 body {
-    background-image: url("images/space_stars_2.jpg");
-
+    background-image: url("/images/space_stars_2.jpg");
+    padding-top: 60px;
     font-family: "Star Jedi Rounded", 'Times New Roman', Times, serif;
     text-align: center;
 }
 
 /* following is navbar styling */
+#navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--star-yellow);
+}
+
 nav ul {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: var(--star-yellow);
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow:
+    padding: 30px;
+    color: #000;
+    /* text-shadow:
         -1px -1px 0 #000,
         0 -1px 0 #000,
         1px -1px 0 #000,
@@ -66,12 +78,22 @@ nav ul {
         1px 1px 0 #000,
         0 1px 0 #000,
         -1px 1px 0 #000,
-        -1px 0 0 #000;
+        -1px 0 0 #000; */
     font-size: 1em;
     font-family: "Star Jedi Rounded";
     letter-spacing: 3px;
-    background-color: var(--star-yellow);
-    padding: 30px;
+}
+
+nav ul a:hover {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000,
+        0 -1px 0 #000,
+        1px -1px 0 #000,
+        1px 0 0 #000,
+        1px 1px 0 #000,
+        0 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px 0 0 #000;
 }
 
 /* following removes pre-set styling for ul and a tags */
@@ -82,6 +104,11 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+/* main section styling */
+#main-section {
+    margin-top: 60px;
 }
 
 /* following is greeting section styling */
@@ -105,8 +132,12 @@ a {
 }
 
 /* following is project image section styling */
-.project {
-    margin-top: 200px;
+.projects-header {
+    margin: 30px;
+}
+
+#project h2 {
+    margin-bottom: 30px;
 }
 
 .projects-grid {
@@ -123,6 +154,10 @@ a {
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
+}
+
+a:hover {
+    background-color: red;
 }
 
 /* 1200px / 16px = 75em */
@@ -158,22 +193,48 @@ body {
 
 /* following is footer section styling */
 #social {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    gap: 50px;
+    gap: 5px;
     margin-top: 30px;
-    padding: 50px;
-    background-color: var(--star-yellow);
+    padding: 130px;
+    /* background-color: var(--star-yellow); */
+    border-radius: 50%;
+    width: 300px;
+    background-image: url("images/death_star_icon_yellow_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#social div:hover {
+    background-color: red;
+}
+
+.death-star {
+    ;
 }
 
 /* following is @media screen sizing styling for mobile & tablets */
 @media only screen and (Max-width: 480px) {
     nav ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         flex-direction: column;
         gap: 15px;
+        font-size: 1.3em;
+    }
+
+    /* main section styling */
+    #main-section {
+        margin-top: 140px;
+    }
+
+    #welcome-section header {
+        letter-spacing: 10px;
+    }
+
+    /* following is footer section styling */
+    #social {
+        gap: 20px;
+        margin: 0;
     }
 }
