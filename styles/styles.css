@@ -50,6 +50,12 @@ body {
     text-align: center;
 }
 
+footer>p {
+    color: var(--star-yellow);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
 /* following is navbar styling */
 #navbar {
     display: flex;
@@ -187,7 +193,6 @@ a:hover {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    /* 18px */
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
@@ -203,7 +208,6 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    /* height: 100vh; */
 }
 
 #social div:hover {
@@ -226,10 +230,12 @@ body {
     background-size: cover;
     background-color: var(--star-yellow);
     border-radius: 50%;
+    margin-bottom: 40px;
 }
 
-.social-div>div:nth-child(1), .social-div>div:nth-child(3)  {
-    margin-top: 30px; 
+.social-div>div:nth-child(1),
+.social-div>div:nth-child(3) {
+    margin-top: 30px;
 }
 
 .social-div>div:nth-child(2) {
