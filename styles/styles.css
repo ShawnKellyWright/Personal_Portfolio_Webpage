@@ -125,7 +125,7 @@ a {
     font-family: "Star Jedi Rounded";
     letter-spacing: 15px;
     font-size: 2em;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 #welcome-section hr {
@@ -136,7 +136,7 @@ a {
 
 #welcome-section h1 {
     margin: 30px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 /* following is project image section styling */
